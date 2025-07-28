@@ -4,13 +4,15 @@ Une API Node.js Express avec intégration MySQL pour la gestion des utilisateurs
 
 ## Fonctionnalités
 
-- ✅ API REST Express.js
-- ✅ Intégration base de données MySQL
-- ✅ Opérations CRUD complètes pour les utilisateurs
-- ✅ Validation des entrées et gestion d'erreurs
-- ✅ Pool de connexions
-- ✅ Configuration par variables d'environnement
-- ✅ Initialisation automatique de la base de données
+- ✅ **API REST Express.js** - Serveur web moderne et performant
+- ✅ **Intégration MySQL** - Base de données relationnelle avec pool de connexions
+- ✅ **Opérations CRUD complètes** - Créer, lire, mettre à jour, supprimer des utilisateurs
+- ✅ **Validation des entrées** - Validation robuste et gestion d'erreurs complète
+- ✅ **Configuration par environnement** - Variables d'environnement sécurisées
+- ✅ **Initialisation automatique** - Création automatique des tables de base de données
+- ✅ **Documentation interactive** - Interface web élégante avec Tailwind CSS v3
+- ✅ **Support CORS** - Communication cross-origin configurée
+- ✅ **Logging des requêtes** - Suivi détaillé des requêtes API
 
 ## Prérequis
 
@@ -79,6 +81,13 @@ npm start
 ```
 
 Le serveur démarrera sur `http://localhost:3000` (ou le port spécifié dans votre fichier `.env`).
+
+## Interface de Documentation
+
+Une fois le serveur démarré, vous pouvez accéder à :
+
+- **Documentation interactive** : `http://localhost:3000` - Interface web élégante avec Tailwind CSS
+- **API de base** : `http://localhost:3000/users` - Points de terminaison JSON
 
 ## Points de Terminaison API
 
@@ -171,13 +180,23 @@ mysql-api-project/
 │   └── database.js          # Connexion et configuration de la base de données
 ├── database/
 │   └── schema.sql           # Schéma de la base de données
+├── public/
+│   └── index.html           # Documentation interactive avec Tailwind CSS
 ├── routes/
 │   └── users.js             # Routes API utilisateurs
 ├── .env.example             # Modèle de variables d'environnement
-├── package.json             # Dépendances du projet
+├── package.json             # Dépendances du projet (inclut Tailwind CSS v3)
 ├── server.js                # Fichier principal de l'application
 └── README.md                # Ce fichier
 ```
+
+## Technologies Utilisées
+
+- **Backend** : Node.js, Express.js
+- **Base de données** : MySQL avec mysql2
+- **Styling** : Tailwind CSS v3 (pour la documentation)
+- **Outils** : Nodemon, CORS, dotenv
+- **Documentation** : Interface web interactive
 
 ## Test de l'API
 
